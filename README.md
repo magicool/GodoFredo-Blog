@@ -1,44 +1,29 @@
 # GodoFredo - Blog - Ghost
-### Un tema libre para Ghost
+### 说明
 
-Hola,  he creado este tema de Ghost para poder ver cómo funciona. Está disponible de forma Gratuita para que lo puedas usar en tu sitio. Está totalmente prohibido su uso comercial. SI Usted tiene alguna sugerencia para poder mejorar el tema,  me puede enviar un Tweet a [@GodoFredoNinja](https://twitter.com/GodoFredoNinja)
+原文件来自@GodoFredoNinja
 
-## USO
+## 使用
 
-### Install global
+### 全局安装
 ```
 $ npm install -g stylus
 $ npm install -g gulp
 $ npm install -g bower
 ```
 
-### Install Local
-```
+### 本地安装
 $ npm install
 $ bower install
 ```
-### Development mode
+### 开发模式
 ```
 $ gulp bower
 $ gulp
 ```
 
-#### Editar los enlaces sociales de la parte inferior de la página
+#### 编辑页面底部 `parttials/footer.hbs`
 
-Abrir y editar `parttials/footer.hbs`
+#### 编辑社交按钮 `post.hbs`
 
-#### Editar el botón me gusta de Facebook, twitter Follow y YouTube, de la página del post
-
-Abrir y editar el contenido de la línea 15 de `post.hbs`
-
-#### Editar la columna derecha del post (SIdebar)
-Abrir y editar `partials/sidebar.hbs`
-
-
-#### Créditos
-Godofredo blog usa  varias de estas librerías
-
-- [Materialize](https://materializecss.com)
-- [Fitvidsjs](http://fitvidsjs.com/)
-- [Jquery.ghostHunter](https://github.com/jamalneufeld/ghostHunter)
-- [Prismjs](http://prismjs.com/) 
+#### 编辑右栏 `partials/sidebar.hbs`
