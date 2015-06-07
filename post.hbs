@@ -31,11 +31,6 @@
         {{!-- Post Share --}}
         <aside class="row Share clear center">
           <h5 class="Share-title">如果你喜欢这篇文章,请分享你的意见和感受！</h5>
-          <a class="Share-items btn waves-effect waves-light icon-twitter" href="https://twitter.com/share?text={{encode title}}&amp;url={{url absolute="true"}}"onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;"> <span class="Share-hidden">Twittear</span> </a>
-          <a class="Share-items btn waves-effect waves-light icon-facebook" href="https://www.facebook.com/sharer/sharer.php?u={{url absolute="true"}}"onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;"> <span class="Share-hidden">User</span> </a>
-          <a class="Share-items btn waves-effect waves-light icon-google" href="https://plus.google.com/share?url={{url absolute="true"}}"onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;"> <span class="Share-hidden">Google +</span></a>
-          <a class="Share-items btn waves-effect waves-light icon-linkedin"  href="https://www.linkedin.com/shareArticle?mini=true&url={{url absolute="true"}}&title={{encode title}}" onclick="window.open(this.href, 'linkedin-share', 'width=600,height=494');return false;"><span class="Share-hidden">User</span></a>
-          <span class="Share-items whatsapp"><a class="wa_btn wa_btn_l" href="whatsapp://send" data-text="{{title}}" data-href=""></a></span>
         </aside>
         {{!-- Add Auhor --}}
         {{#author}}
@@ -67,8 +62,47 @@
         <div class="card">
           <div class="card-content">
             <h3 class="Comments-title">你的观点是什么?留言……</h3>
+            
+
+
             <div class="Comments-all">
-              <div class="fb-comments" data-href="{{url absolute="true"}}" data-width="100%" data-numposts="10" data-colorscheme="light"></div>
+              <div class="fb-comments" data-href="{{url absolute="true"}}" data-width="100%" data-numposts="10" data-colorscheme="light">
+
+<!-- 多说评论框 start -->
+  <div class="ds-thread" data-thread-key="{{url absolute="true"}}" data-title="{{ title }}" data-url="{{url absolute="true"}}"></div>
+<!-- 多说评论框 end -->
+<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+<script type="text/javascript">
+var duoshuoQuery = {short_name:"blogmagicoolx"};
+  (function() {
+    var ds = document.createElement('script');
+    ds.type = 'text/javascript';ds.async = true;
+    ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+    ds.charset = 'UTF-8';
+    (document.getElementsByTagName('head')[0] 
+     || document.getElementsByTagName('body')[0]).appendChild(ds);
+  })();
+  </script>
+<!-- 多说公共JS代码 end -->
+
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES * * */
+    var disqus_shortname = 'magicoolxblog';
+    var disqus_identifier = '{{url absolute="true"}}';
+    var disqus_title = '{{title}}';
+    var disqus_url = '{{url absolute="true"}}';
+    
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+
+              </div>
             </div>
           </div>
         </div>
